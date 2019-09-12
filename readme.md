@@ -12,20 +12,33 @@
 
 * Finally, run the the server.py file in `aws_ext` and `gcp_ext` using the following commands
 
-GCP:
+GCP
+----
+
+Usage:
 
 ```
-Usage: python server.py -csv <file-to-gcp_codes> -port 7000 -code GCP -FROM <your-andrew-id>
-
-Example: python server.py -csv ../codes/gcp2019codes.csv -port 7000 -code GCP -FROM cahuja
+python server.py -csv <file-to-gcp_codes> -port 7000 -code GCP -FROM <your-andrew-id>
 ```
 
-AWS:
+Example:
 
 ```
-Usage: python server.py -csv <file-to-aws_codes> -port 8000 -code AWS -FROM <your-andrew-id>
+python server.py -csv ../codes/gcp2019codes.csv -port 7000 -code GCP -FROM cahuja
+```
 
-Example: python server.py -csv ../codes/aws2019codes.csv -port 8000 -code AWS -FROM cahuja
+AWS
+----
+Usage:
+
+```
+python server.py -csv <file-to-aws_codes> -port 8000 -code AWS -FROM <your-andrew-id>
+```
+
+Example:
+
+```
+python server.py -csv ../codes/aws2019codes.csv -port 8000 -code AWS -FROM cahuja
 ```
 
 * Use your andrew-id and the script will ask you for your password. This password is not stored anywhere except the RAM and it gets removed as soon as the program is killed.
